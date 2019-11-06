@@ -20,11 +20,11 @@ app.config['ENV'] = 'development'
 app.config['DEBUG'] = True
 app.config['TESTING'] = True
 
-""" 
+
 @app.route('/')
 def home():
-  return render_template('index.html')
- """
+  return ("Hello World!")
+
 
 infer = load_learner('./models/', file='date_prev_btc_model.pkl')
 
