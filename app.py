@@ -23,7 +23,7 @@ app.config['TESTING'] = True
 
 @app.route('/')
 def home():
-  return ("Hello World!")
+  return "Hello World!"
 
 
 infer = load_learner('./models/', file='date_prev_btc_model.pkl')
